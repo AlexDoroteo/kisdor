@@ -1,0 +1,143 @@
+.showcase {
+  padding: 10rem 0;
+}
+
+.showcase__container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.showcase__badge {
+  display: inline-block;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 999px;
+
+  background: rgba(34, 211, 238, 0.1);
+
+  color: #22d3ee;
+
+  margin-bottom: 1rem;
+}
+
+.showcase h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 1rem;
+}
+
+.showcase p {
+  color: #94a3b8;
+  font-size: 1.1rem;
+}
+
+.dashboard-preview {
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+
+  border-radius: 30px;
+
+  padding: 2rem;
+}
+
+.dashboard-preview__header {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dashboard-preview__header span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/*TOP CARDS*/
+.dashboard-preview__stats {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.04);
+
+  padding: 1rem;
+
+  border-radius: 16px;
+}
+
+.stat-card h4 {
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card span {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/*CHARTS*/
+.dashboard-preview__chart {
+  margin-top: 2rem;
+
+  height: 280px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.chart-line {
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 80%;
+
+  background: linear-gradient(180deg, rgba(34, 211, 238, 0.5), transparent);
+
+  clip-path: polygon(
+    0% 80%,
+    10% 70%,
+    20% 75%,
+    30% 40%,
+    40% 55%,
+    50% 25%,
+    60% 35%,
+    70% 15%,
+    80% 20%,
+    90% 5%,
+    100% 0%,
+    100% 100%,
+    0% 100%
+  );
+}
+
+@media (max-width: 900px) {
+  .showcase__container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-preview__stats {
+    grid-template-columns: 1fr;
+  }
+}

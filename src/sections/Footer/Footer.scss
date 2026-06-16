@@ -1,0 +1,46 @@
+@use "../../styles/abstracts/variables" as *;
+
+.footer {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.footer__container {
+  width: min(90%, 1200px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  color: $text-secondary;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.footer__links a:hover {
+  color: #22d3ee;
+}
+
+.footer__copyright {
+  font-size: 0.9rem;
+  color: $text-secondary;
+}

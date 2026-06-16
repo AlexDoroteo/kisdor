@@ -1,0 +1,80 @@
+@use "../../../styles/abstracts/variables" as *;
+@use "../../../styles/abstracts/mixins" as *;
+
+.navbar {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+
+  transition: all 0.4s ease;
+}
+
+.navbar__container {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem;
+
+  transition:
+    padding 0.4s ease,
+    background 0.4s ease,
+    border-radius 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.navbar--scrolled .navbar__container {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  background: rgba(15, 23, 42, 0.75);
+
+  backdrop-filter: blur(20px);
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  padding: 0.8rem 1.5rem;
+}
+
+.navbar--scrolled {
+  top: 1rem;
+}
+
+.navbar__logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.navbar__nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__nav a {
+  color: $text-secondary;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.navbar__nav a:hover {
+  color: white;
+}
+
+.navbar__cta {
+  background: linear-gradient(135deg, #06b6d4, #22d3ee);
+
+  border: none;
+  color: white;
+
+  padding: 0.9rem 1.4rem;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+}

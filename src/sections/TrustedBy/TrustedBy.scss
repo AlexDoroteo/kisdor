@@ -1,0 +1,55 @@
+@use "../../styles/abstracts/variables" as *;
+@use "../../styles/abstracts/mixins" as *;
+
+.trusted {
+  padding: 6rem 0;
+}
+
+.trusted__container {
+  @include container;
+}
+
+.trusted__title {
+  text-align: center;
+  color: $text-secondary;
+  margin-bottom: 3rem;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.trusted__slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.trusted__track {
+  display: flex;
+  gap: 4rem;
+  width: max-content;
+
+  animation: marquee 25s linear infinite;
+}
+
+.trusted__track span {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
