@@ -28,7 +28,7 @@ export default function Navbar() {
       }}
     >
       <div className="navbar__container">
-        <div className="navbar__logo">FinFlow</div>
+        <div className="navbar__logo">Kisdor</div>
 
         <nav className="navbar__nav">
           <a href="#">Sobre mí</a>
@@ -37,8 +37,6 @@ export default function Navbar() {
           <a href="#">Skills</a>
           <a href="#">Contacto</a>
         </nav>
-
-        <button className="navbar__cta">Get Started</button>
       </div>
     </motion.header>
   );

@@ -22,7 +22,7 @@ const experiences = [
   },
   {
     year: "2025",
-    title: "Aplicación de Encriptación de rchivos sensibles",
+    title: "Aplicación de Encriptación de archivos sensibles",
     description:
       "Desarrollé una aplicación desktop con Electron y JavaScript para la protección de archivos sensibles utilizados por el área administrativa.",
   },

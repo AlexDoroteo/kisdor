@@ -28,7 +28,7 @@ export default function Footer() {
           <a href="mailto:apadilladoroteo@gmail.com">Correo</a>
         </div>
 
-        <p className="footer__copyright">© 2026 Alexander Padilla.</p>
+        <p className="footer__copyright">© 2026 Kisdor.</p>
       </div>
     </footer>
   );
