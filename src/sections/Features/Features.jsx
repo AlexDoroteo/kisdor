@@ -4,7 +4,7 @@ import "./Features.scss";
 
 export default function Features() {
   return (
-    <section className="features">
+    <section className="features" id="services">
       <div className="features__container">
         <span className="features__badge">Especialidades</span>
 

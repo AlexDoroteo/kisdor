@@ -3,7 +3,7 @@ import "./Showcase.scss";
 
 export default function Showcase() {
   return (
-    <section className="showcase">
+    <section className="showcase" id="showcase">
       <div className="showcase__container">
         <motion.div
           className="showcase__content"

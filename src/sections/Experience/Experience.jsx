@@ -36,7 +36,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="experience">
+    <section className="experience" id="experience">
       <div className="experience__container">
         <h2>Experiencia Profesional</h2>
 

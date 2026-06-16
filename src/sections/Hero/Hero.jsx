@@ -16,7 +16,7 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="about">
       <div className="hero__container">
         <div className="hero__content">
           <h1 className="hero__title">
@@ -39,8 +39,6 @@ export default function Hero() {
         >
           <div className="dashboard">
             <div className="dashboard__sidebar">
-              <div className="dashboard__logo"></div>
-
               <div className="dashboard__menu">
                 <span></span>
                 <span></span>

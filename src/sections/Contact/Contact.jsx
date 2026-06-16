@@ -3,7 +3,7 @@ import "./Contact.scss";
 
 export default function Contact() {
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="contact__container">
         <motion.span
           className="section-tag"

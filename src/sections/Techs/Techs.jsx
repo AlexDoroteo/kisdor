@@ -1,4 +1,4 @@
-import "./TrustedBy.scss";
+import "./Techs.scss";
 
 const logos = [
   "Angular",
@@ -12,9 +12,9 @@ const logos = [
   "Laravel",
 ];
 
-export default function TrustedBy() {
+export default function Techs() {
   return (
-    <section className="trusted">
+    <section className="trusted" id="skills">
       <div className="trusted__container">
         <p className="trusted__title">Tecnologías</p>
 
