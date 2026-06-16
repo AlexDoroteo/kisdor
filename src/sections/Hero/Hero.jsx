@@ -54,8 +54,8 @@ export default function Hero() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
               >
-                {stats.map((stat, index) => (
-                  <div className="about__item">
+                {stats.map((stat) => (
+                  <div key={stat.label} className="about__item">
                     <h3>
                       <Counter
                         end={stat.value}

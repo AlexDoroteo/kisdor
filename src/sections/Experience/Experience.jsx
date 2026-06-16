@@ -48,7 +48,7 @@ export default function Experience() {
         <div className="timeline">
           {experiences.map((item, index) => (
             <motion.div
-              key={item.year}
+              key={`${item.year}-${item.title}`}
               className="timeline__item"
               initial={{
                 opacity: 0,

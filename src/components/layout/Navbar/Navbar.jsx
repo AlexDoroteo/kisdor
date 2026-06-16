@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,8 +30,16 @@ export default function Navbar() {
     >
       <div className="navbar__container">
         <div className="navbar__logo">Kisdor</div>
+        <button
+          className="navbar__toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <span className="material-symbols-outlined">
+            {menuOpen ? "close" : "menu"}
+          </span>
+        </button>
 
-        <nav className="navbar__nav">
+        <nav className={`navbar__nav ${menuOpen ? "navbar__nav--open" : ""}`}>
           <a href="#about">Sobre mí</a>
           <a href="#skills">Tecnologías</a>
           <a href="#services">Especialidades</a>
