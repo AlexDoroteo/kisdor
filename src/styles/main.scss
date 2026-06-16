@@ -3,6 +3,9 @@
 
 @use "./base/reset";
 @use "./base/typography";
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: #0b1020;

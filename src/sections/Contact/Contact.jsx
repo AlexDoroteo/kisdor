@@ -49,12 +49,19 @@ export default function Contact() {
 
           <a
             href="https://www.linkedin.com/in/alexander-airi-padilla-doroteo-341b58303/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="contact-btn"
           >
             LinkedIn
           </a>
 
-          <a href="https://github.com/AlexDoroteo" className="contact-btn">
+          <a
+            href="https://github.com/AlexDoroteo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-btn"
+          >
             GitHub
           </a>
         </motion.div>
